@@ -1,1 +1,1 @@
-"# C++ Store Files" 
+# C++ Store Files
