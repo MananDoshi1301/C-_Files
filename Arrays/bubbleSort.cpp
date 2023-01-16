@@ -17,7 +17,7 @@ int main() {
 
     cout << "Enter " << n << " elements with a space: ";
 
-    int arr[n], minNum = INT_MAX, maxNum = INT_MIN;
+    int arr[n];
     
     for ( int i=0; i<n; i++){
         cin >> arr[i];                
