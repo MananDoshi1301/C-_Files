@@ -29,7 +29,26 @@ int main() {
   // FUNCTION
   // spiralOrderMatTrav(&arr[0][0], n, m);
 
-  int total = n * m;
+  int total = n * m, x_marker = 0, y_marker = 0;
+
+  while (total > 0) {
+    for (int i = x_marker; i < (m - 1 - x_marker); i++) {
+      cout << arr[y_marker][i] << "\t";
+      total--;
+    }
+    cout << endl;
+    y_marker++;
+    for (int j = y_marker; j < n - 1 - y_marker; j++) {
+      cout << arr[j][n - 1 - x_marker] << "\t";
+      total--;
+    }
+    cout << endl;
+    for (int i = m - 2 - x_marker; i >= x_marker; i--) {
+      cout << arr[n - 1 - y_marker][i] << "\t";
+      total--;
+    }
+    cout << endl;
+  }
 
   // OUTPUT
   return 0;
